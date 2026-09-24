@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# 训练/推理产物（体量大、机器相关，不入库）
+VPGAN/checkpoints/
+VPGAN/results/
+VPGAN/text/
+HARBOR/checkpoints/
+HARBOR/results/
+pretrained_model/
+*.pth
+*.pt
+*.ckpt
+*.pkl
+*.bin
+
+# 数据
+DATA_ROOT_DIR/
+data/
+datasets/*.zip
+datasets/*.tar
+
+# 日志 / 临时
+*.log
+nohup.out
+.DS_Store
+.ipynb_checkpoints/
+
+# 编辑器
+.vscode/
+.idea/
+
+# 论文提示对（上游既有）
+CPT_prompts/init_prompt_pair.pth
