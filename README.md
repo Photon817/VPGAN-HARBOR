@@ -116,12 +116,3 @@ CUDA_VISIBLE_DEVICES=0 python HARBOR/main.py \
 
 ---
 
-## 复现边界（如实说明）
-
-- 本仓库**不含训练权重**，需自行训练或按论文配置复现。
-- 论文级结果依赖：ANHIR WSI、CONCH 提示嵌入、以及域特定的 DDIM 预训练——三者缺一即退化为演示效果。
-- 若只需一个能点开就看的 Demo，请配合上层 PathAI 应用（自带一份小样本 demo 权重与合成/真实切片），本仓库负责"从哪来"。
-
-## 致谢
-
-构建于 [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)、[CLIP-LIT](https://github.com/ZhexinLiang/CLIP-LIT)、[DPI](https://github.com/DianaNerualNetwork/StainPromptInversion)、[guided-diffusion](https://github.com/openai/guided-diffusion) 之上。VPGAN 目录沿用 CycleGAN 的 MIT 许可，HARBOR 目录许可见其 `LICENSE`。
