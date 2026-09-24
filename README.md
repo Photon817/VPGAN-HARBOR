@@ -5,7 +5,7 @@
 - **VPGAN**：CycleGAN 骨架的非配对图像翻译，负责 H&E ⇄ 特殊染色域之间的双向映射，并注入 VLM 文本提示做方向约束。
 - **HARBOR**：在 VPGAN 生成结果之上，用一个预训练 DDIM 扩散模型做推理端增强，抑制伪影、稳定纹理。
 
-> 本仓库对应论文 *VLM-based Prompts as the Optimal Assistant for Unpaired Histopathology Virtual Staining*（ACMMM 2025）。这里定位成**可直接跑起来的工具库**，重点是复现路径清晰、环境不再假设你有 8 卡 H100。
+
 
 ---
 
